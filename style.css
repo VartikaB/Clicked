@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+
+}
+.emoji {
+    font-size: 10rem;
+    cursor: pointer;
+    user-select: none;
+}
+.example_c {
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 20px;
+	border: 4px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.example_c:hover {
+	color: #ffffff !important;
+	background: #f6b93b;
+	border-color: #f6b93b !important;
+	transition: all 0.4s ease 0s;
+}
+.happy{
+    display: none;
+}
+.sad{
+    display: none;
+}
+.active{
+    display: block;
+}
