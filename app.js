@@ -2,12 +2,15 @@ var face=document.querySelector('.button_cont');
 const happyFace=document.querySelector('.happy');
 const sadFace=document.querySelector('.sad');
 var feel=document.getElementsByClassName("button_cont");
-var emo=document.getElementsByClassName("example_c");
 face.addEventListener('click', () => {
     if(feel.innerText=="Happy"){
         sadFace.classList.add('active');
         happyFace.classList.remove('active');
         feel.innerText="Sad";
+        if(document.getElementById("demo").innerHTML =="Happy"){
+            document.getElementById("demo").innerHTML ="Sad";
+        }
+        
       
        
             
@@ -19,6 +22,9 @@ face.addEventListener('click', () => {
         sadFace.classList.remove('active');
         feel.innerText="Happy";
         document.getElementsByClassName("emotion").innerHTML=feel.innerText;
+        if(document.getElementById("demo").innerHTML =="Sad"){
+            document.getElementById("demo").innerHTML ="Happy";
+        }
             
         
         
